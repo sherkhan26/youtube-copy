@@ -1,0 +1,21 @@
+@import '../../../assets/styles/variables';
+
+.profile_info {
+	@apply text-center flex flex-wrap items-center;
+
+	> span {
+		@apply block rounded-full mx-auto;
+	}
+
+	> div {
+		@apply ml-3;
+		> .name {
+			@apply font-bold text-lg;
+		}
+
+		> .location {
+			@apply text-sm text-left;
+			color: $gray;
+		}
+	}
+}
